@@ -1,0 +1,266 @@
+- 1-Exercícios - Caso de Estudo "Biblioteca" 
+
+-- Exercício de programação 1: E1
+Apresente a query para listar todos os livros publicados após 2014. Ordenar pela coluna cod, em ordem crescente, as linhas.  Atenção às colunas esperadas no resultado final: cod, titulo, autor, editora, valor, publicacao, edicao, idioma
+Resposta:
+
+SELECT *
+FROM livro
+WHERE publicacao > '2014-12-31'
+ORDER BY cod ASC;
+
+
+-- Exercício de programação 2: E2
+Apresente a query para listar os 10 livros mais caros. Ordenar as linhas pela coluna valor, em ordem decrescente.  Atenção às colunas esperadas no resultado final:  titulo, valor.
+Resposta:
+
+SELECT
+    titulo, 
+    valor
+FROM livro
+ORDER BY valor DESC
+LIMIT 10;
+
+
+-- Exercício de programação 3: E3
+Apresente a query para listar as 5 editoras com mais livros na biblioteca. O resultado deve conter apenas as colunas quantidade, nome, estado e cidade. Ordenar as linhas pela coluna que representa a quantidade de livros em ordem decrescente.
+Resposta:
+
+SELECT
+    COUNT(*) AS quantidade, 
+    edi.nome, 
+    end.estado, 
+    end.cidade
+FROM livro AS liv
+JOIN editora AS edi
+    ON liv.editora = edi.codeditora
+JOIN endereco AS end
+    ON edi.endereco = end.codendereco
+GROUP BY edi.nome, end.estado, end.cidade
+ORDER BY quantidade DESC
+LIMIT 5;
+
+
+-- Exercício de programação 4: E4
+Apresente a query para listar a quantidade de livros publicada por cada autor. Ordenar as linhas pela coluna nome (autor), em ordem crescente. Além desta, apresentar as colunas codautor, nascimento e quantidade (total de livros de sua autoria).
+Resposta:
+
+SELECT
+    aut.nome, 
+    aut.codautor, 
+    aut.nascimento, 
+    COUNT(liv.cod) AS quantidade
+FROM autor AS aut
+LEFT JOIN livro AS liv
+    ON liv.autor = aut.codautor
+GROUP BY aut.nome, aut.codautor, aut.nascimento
+ORDER BY aut.nome ASC;
+
+
+-- Exercício de programação 5: E5
+Apresente a query para listar o nome dos autores que publicaram livros através de editoras NÃO situadas na região sul do Brasil. Ordene o resultado pela coluna nome, em ordem crescente. Não podem haver nomes repetidos em seu retorno.
+Resposta:
+
+SELECT DISTINCT aut.nome
+FROM autor AS aut
+INNER JOIN livro AS liv
+    ON aut.codautor = liv.autor
+INNER JOIN editora AS edi
+    ON liv.editora = edi.codeditora
+INNER JOIN endereco AS end
+    ON edi.endereco = end.codendereco
+WHERE end.estado NOT IN ('PARANÁ', 'RIO GRANDE DO SUL')
+ORDER BY aut.nome ASC;
+
+
+-- Exercício de programação 6: E6
+Apresente a query para listar o autor com maior número de livros publicados. O resultado deve conter apenas as colunas codautor, nome, quantidade_publicacoes.
+Resposta:
+
+SELECT
+    aut.codautor,
+    aut.nome,
+    COUNT(liv.cod) AS quantidade_publicacoes
+FROM autor AS aut
+INNER JOIN livro AS liv
+    ON aut.codautor = liv.autor
+GROUP BY aut.codautor, aut.nome
+ORDER BY quantidade_publicacoes DESC
+LIMIT 1;
+
+
+-- Exercício de programação 7: E7
+Apresente a query para listar o nome dos autores com nenhuma publicação. Apresentá-los em ordem crescente.
+Resposta:
+
+SELECT aut.nome
+FROM autor AS aut
+LEFT JOIN livro AS liv
+    ON aut.codautor = liv.autor
+WHERE liv.cod IS NULL
+ORDER BY aut.nome ASC;
+
+
+
+
+
+- 2-Exercícios - Caso de Estudo "Loja"
+
+-- Exercício de programação 8: E8
+Apresente a query para listar o código e o nome do vendedor com maior número de vendas (contagem), e que estas vendas estejam com o status concluída.  As colunas presentes no resultado devem ser, portanto, cdvdd e nmvdd.
+Resposta:
+
+SELECT
+    tbvdd.cdvdd, 
+    tbvdd.nmvdd
+FROM tbvendas AS tbv
+INNER JOIN tbvendedor AS tbvdd 
+	ON tbv.cdvdd = tbvdd.cdvdd
+WHERE tbv.status = 'Concluído'
+GROUP BY tbvdd.cdvdd, tbvdd.nmvdd
+ORDER BY COUNT(*) DESC
+LIMIT 1;
+
+
+-- Exercício de programação 9: E9
+Apresente a query para listar o código e nome do produto mais vendido entre as datas de 2014-02-03 até 2018-02-02, e que estas vendas estejam com o status concluída. As colunas presentes no resultado devem ser cdpro e nmpro.
+Resposta:
+
+SELECT
+    tbv.cdpro, 
+    tbv.nmpro
+FROM tbvendas AS tbv
+WHERE tbv.status = 'Concluído' AND tbv.dtven BETWEEN '2014-02-03' AND '2018-02-02'
+GROUP BY tbv.cdpro, tbv.nmpro
+LIMIT 1;
+
+
+-- Exercício de programação 10: E10
+A comissão de um vendedor é definida a partir de um percentual sobre o total de vendas (quantidade * valor unitário) por ele realizado. O percentual de comissão de cada vendedor está armazenado na coluna perccomissao, tabela tbvendedor. 
+Com base em tais informações, calcule a comissão de todos os vendedores, considerando todas as vendas armazenadas na base de dados com status concluído.
+As colunas presentes no resultado devem ser vendedor, valor_total_vendas e comissao. O valor de comissão deve ser apresentado em ordem decrescente arredondado na segunda casa decimal.
+Resposta:
+
+SELECT tbvdd.nmvdd AS vendedor, 
+    SUM(tbv.qtd * tbv.vrunt) AS valor_total_vendas,
+    ROUND(SUM(tbv.qtd * tbv.vrunt) * tbvdd.perccomissao / 100, 2) AS comissao
+FROM tbvendas AS tbv
+INNER JOIN tbvendedor AS tbvdd
+    ON tbv.cdvdd = tbvdd.cdvdd
+WHERE tbv.status = 'Concluído'
+GROUP BY tbvdd.nmvdd, tbvdd.perccomissao
+ORDER BY comissao DESC;
+
+
+-- Exercício de programação 11: E11
+Apresente a query para listar o código e nome cliente com maior gasto na loja. As colunas presentes no resultado devem ser cdcli, nmcli e gasto, esta última representando o somatório das vendas (concluídas) atribuídas ao cliente.
+Resposta:
+
+SELECT
+    tbv.cdcli,
+    tbv.nmcli,
+    SUM(tbv.qtd * tbv.vrunt) AS gasto
+FROM tbvendas AS tbv
+WHERE tbv.status = 'Concluído'
+GROUP BY tbv.cdcli, tbv.nmcli
+ORDER BY gasto DESC
+LIMIT 1;
+
+
+-- Exercício de programação 12: E12
+Apresente a query para listar código, nome e data de nascimento dos dependentes do vendedor com menor valor total bruto em vendas (não sendo zero). As colunas presentes no resultado devem ser cddep, nmdep, dtnasc e valor_total_vendas.
+Observação: Apenas vendas com status concluído.
+Resposta:
+
+WITH vendas_vendedor AS (
+    SELECT
+    	tbvendedor.cdvdd,
+    	SUM(tbvendas.qtd * tbvendas.vrunt) AS valor_total_vendas
+    FROM tbvendas
+    INNER JOIN tbvendedor
+    	ON tbvendas.cdvdd = tbvendedor.cdvdd
+    WHERE tbvendas.status = 'Concluído'
+    GROUP BY tbvendedor.cdvdd
+    HAVING SUM(tbvendas.qtd * tbvendas.vrunt) > 0
+    ORDER BY valor_total_vendas ASC
+    LIMIT 1
+)
+SELECT
+    tbdependente.cddep,
+    tbdependente.nmdep,
+    tbdependente.dtnasc,
+    vendas_vendedor.valor_total_vendas
+FROM tbdependente
+INNER JOIN vendas_vendedor 
+    ON tbdependente.cdvdd = vendas_vendedor.cdvdd;
+
+
+-- Exercício de programação 13: E13
+Apresente a query para listar os 10 produtos menos vendidos pelos canais de E-Commerce ou Matriz (Considerar apenas vendas concluídas).  As colunas presentes no resultado devem ser cdpro, nmcanalvendas, nmpro e quantidade_vendas.
+Resposta:
+
+SELECT
+    tbv.cdpro,
+    tbv.nmcanalvendas,
+    tbv.nmpro,
+    SUM(tbv.qtd) AS quantidade_vendas
+FROM tbvendas AS tbv
+WHERE tbv.status = 'Concluído'
+GROUP BY tbv.cdpro, tbv.nmcanalvendas, tbv.nmpro
+ORDER BY quantidade_vendas ASC
+LIMIT 10;
+
+
+-- Exercício de programação 14: E14
+Apresente a query para listar o gasto médio por estado da federação. As colunas presentes no resultado devem ser estado e gastomedio. Considere apresentar a coluna gastomedio arredondada na segunda casa decimal e ordenado de forma decrescente.
+Observação: Apenas vendas com status concluído.
+Resposta:
+
+SELECT 
+    tbv.estado,
+    ROUND(AVG(tbv.qtd * tbv.vrunt), 2) AS gastomedio
+FROM tbvendas AS tbv
+WHERE tbv.status = 'Concluído'
+GROUP BY tbv.estado
+ORDER BY gastomedio DESC;
+
+
+-- Exercício de programação 15: E15
+Apresente a query para listar os códigos das vendas identificadas como deletadas. Apresente o resultado em ordem crescente.
+Resposta:
+
+SELECT tbv.cdven
+FROM tbvendas AS tbv
+WHERE tbv.deletado = '1'
+ORDER BY tbv.cdven ASC;
+
+
+-- Exercício de programação 16: E16
+Apresente a query para listar a quantidade média vendida de cada produto agrupado por estado da federação. As colunas presentes no resultado devem ser estado e nmprod e quantidade_media. Considere arredondar o valor da coluna quantidade_media na quarta casa decimal. Ordene os resultados pelo estado (1º) e nome do produto (2º).
+Obs: Somente vendas concluídas.
+Resposta:
+
+SELECT
+    tbv.estado, 
+    tbv.nmpro, 
+    ROUND(AVG(tbv.qtd), 4) AS quantidade_media
+FROM tbvendas AS tbv
+WHERE tbv.status = 'Concluído'
+GROUP BY tbv.estado, tbv.nmpro
+ORDER BY tbv.estado ASC, tbv.nmpro ASC;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
