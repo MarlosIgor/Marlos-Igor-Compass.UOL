@@ -11,7 +11,7 @@ Concluí o curso "Segurança em Aplicações Web", o qual me proporcionou uma co
 - [Sprint 1️⃣](Sprint%201/): 
 Concluí dois cursos importantes: Git e GitHub, e Linux para Desenvolvedores. Agora estou mais capacitado e preparado para lidar com controle de versão e colaboração em projetos, além de ter adquirido habilidades relevantes para a administração de servidores web. Esses cursos contribuem para o meu desenvolvimento profissional.
 
-- [Sprint 2️⃣](Sprint%202/): ...
+- [Sprint 2️⃣](Sprint%202/): Concluí o curso de SQL para Análise de Dados, aprimorando minhas habilidades nessa área. Adquiri conhecimentos práticos e teóricos essenciais para manipular dados usando SQL. Aprendi a criar consultas avançadas, otimizar consultas e utilizar funções agregadas.
 
 
 # Desafio 🧠
