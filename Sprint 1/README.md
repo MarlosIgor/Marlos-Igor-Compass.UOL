@@ -4,6 +4,7 @@
 
 
 # Evidências 📄
+
 - Anotações do Curso de
 [Git e GitHub](https://natural-oyster-41d.notion.site/Git-e-GitHub-do-b-sico-ao-avan-ado-c-gist-e-GitHub-Pages-61b3d3a3225640078169c612c3882c43)
 
@@ -18,5 +19,8 @@
 
 - Certificado do Curso de 
 [Linux](https://www.udemy.com/certificate/UC-6c1ee5f0-c3d6-4798-8507-233693afb4aa/)
+
+- Certificado de Conclusão da
+[Sprint 1](https://compassuol.udemy.com/certificate/UC-d7a5a7d2-9846-4868-8f95-67c1590b6c97/)
 
 
