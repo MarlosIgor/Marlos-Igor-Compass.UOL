@@ -8,5 +8,5 @@ COPY hash_string.py .
 RUN pip install requests
 
 CMD ["python", "hash_string.py"]
-# cria uma imagem: docker build -t hash_string .
-# executa um contêiner: docker run -d -it --name hash_string --rm hash_string
+# cria uma imagem: docker build -t mascarar-dados .
+# executa um contêiner: docker run -d -it --name hash_string --rm mascarar-dados
