@@ -1,0 +1,25 @@
+version: '3.3'
+
+services:
+
+  db: # Container de MySQL
+    image: mysql:5.7 # FROM mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    env_file: # Carrega variáveis de ambiente do arquivo db.env
+      - ./config/db.env
+
+
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    ports:
+      - "8000:80"
+    restart: always
+    env_file: # Carrega variáveis de ambiente do arquivo db.env
+      - ./config/wp.env
+
+volumes:
+  db_data: {}

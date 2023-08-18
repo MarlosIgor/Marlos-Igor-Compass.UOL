@@ -1,0 +1,33 @@
+version: '3.3' # Especifica a versão da sintaxe do Docker Compose sendo usada.
+
+services: # Define os serviços que serão gerenciados por este arquivo Docker Compose.
+
+  # Serviço do banco de dados MySQL
+  db: # Nome do serviço. Este é o serviço que executará o banco de dados MySQL.
+    image: mysql:5.7  # Usa a imagem MySQL na versão 5.7
+    volumes: #  Define a configuração de volumes para persistir os dados do MySQL.
+      - db_data:/var/lib/mysql  # Conecta o volume "db_data" ao diretório do MySQL para persistência de dados
+    restart: always  # Reinicia o serviço sempre que ocorrer um erro ou o sistema for reiniciado
+    environment: # Define variáveis de ambiente para configurar o contêiner MySQL. Define a senha do root, o nome do banco de dados, o usuário do MySQL e a senha do usuário.
+      MYSQL_ROOT_PASSWORD: wordpress  # Senha do usuário root do MySQL
+      MYSQL_DATABASE: wordpress  # Nome do banco de dados
+      MYSQL_USER: marlos  # Nome de usuário do MySQL
+      MYSQL_PASSWORD: 1234  # Senha do usuário do MySQL
+
+  # Serviço do WordPress
+  wordpress: # Nome do serviço. Este é o serviço que executará o WordPress.
+    image: wordpress:latest  # Usa a imagem mais recente do WordPress
+    depends_on: # Indica que o serviço "wordpress" depende do serviço "db", ou seja, o MySQL deve estar em execução antes do WordPress.
+      - db  # O serviço do WordPress depende do serviço do banco de dados MySQL
+    ports: # Mapeia a porta 80 do contêiner do WordPress para a porta 8080 do host.
+      - "8000:80"  # Mapeia a porta 80 do contêiner do WordPress para a porta 8080 do host
+    restart: always  # Reinicia o serviço sempre que ocorrer um erro ou o sistema for reiniciado
+    environment: # Define variáveis de ambiente para configurar o contêiner do WordPress. Indica onde encontrar o banco de dados MySQL, nome de usuário e senha.
+      WORDPRESS_DB_HOST: db:3306  # Endereço do host e porta do banco de dados MySQL
+      WORDPRESS_DB_USER: marlos  # Nome de usuário do banco de dados MySQL
+      WORDPRESS_DB_PASSWORD: 1234  # Senha do usuário do banco de dados MySQL
+      WORDPRESS_DB_NAME: wordpress  # Nome do banco de dados usado pelo WordPress
+
+volumes: # Define o volume "db_data" criado anteriormente.
+  db_data: { }  # Define o volume vazio "db_data" para persistência de dados do MySQL
+

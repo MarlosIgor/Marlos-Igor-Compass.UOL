@@ -14,7 +14,11 @@ Concluí dois cursos importantes: Git e GitHub, e Linux para Desenvolvedores. Ag
 - [Sprint 2️⃣](Sprint%202/): 
 Concluí o curso de Big Data Fundamentos 3.0 e o curso de SQL para Análise de Dados. Esses cursos me proporcionaram uma base sólida em conceitos de Big Data, sistemas de armazenamento, processamento paralelo, Cloud Computing, MLOps, DataOps, Dados Como Serviço e ETL. Também aprendi a manipular dados usando SQL, incluindo como criar consultas avançadas, otimizar consultas e utilizar funções agregadas.
 
-- [Sprint 3️⃣](Sprint%203/): Concluí o Curso de Python, abrangendo desde conceitos básicos até técnicas avançadas. O curso incluiu temas como Algoritmos, Estruturas de Dados, Fundamentos, Orientação a Objeto e Programação Funcional. 
+- [Sprint 3️⃣](Sprint%203/): 
+Concluí o Curso de Python, abrangendo desde conceitos básicos até técnicas avançadas. O curso incluiu temas como Algoritmos, Estruturas de Dados, Fundamentos, Orientação a Objeto e Programação Funcional. 
+
+- [Sprint 4️⃣](Sprint%204/):
+Concluí o curso de "Estatística Descritiva com Python", onde aprendi a analisar dados utilizando bibliotecas Python como NumPy e Pandas, calculando medidas estatísticas e visualizando informações relevantes. Além disso, finalizei os cursos de "Docker para Desenvolvedores com Docker Swarm e Kubernetes", adquirindo habilidades em criação, implantação e escalonamento de aplicativos por meio de contêineres. Agora estou capacitado a unir análise de dados estatísticos com implementações de aplicativos mais eficientes e escaláveis usando tecnologias de contêineres.
 
 
 # Desafio 🧠

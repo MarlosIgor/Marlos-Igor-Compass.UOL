@@ -1,0 +1,14 @@
+# NODE 1
+ssh -i "curso-docker.pem" ec2-user@ec2-52-91-68-154.compute-1.amazonaws.com
+
+# NODE 2
+ssh -i "curso-docker.pem" ec2-user@ec2-3-84-75-10.compute-1.amazonaws.com
+
+# NODE 3
+ssh -i "curso-docker.pem" ec2-user@ec2-3-81-85-49.compute-1.amazonaws.com
+
+# NODE 4
+ssh -i "curso-docker.pem" ec2-user@ec2-54-89-124-47.compute-1.amazonaws.com
+
+# TOKEN PARA JOIN
+docker swarm join --token SWMTKN-1-5g9k9v5q5koy2h8skci78a0jj3zsivq2lb0b6pvva24jih7hnp-13m55ohpgalkg4tc72alrkkvi 52.91.68.154:2377
