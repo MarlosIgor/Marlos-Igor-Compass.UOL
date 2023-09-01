@@ -24,7 +24,7 @@
 [AWS Partner: Cloud Economics Accreditation](https://www.credly.com/badges/af98aebb-6a1e-4ff5-b0d6-ca19fb7c1aac/linked_in?t=s0bkzz)
 
 - Certificado do Curso de
-[AWS Certified Cloud Practitioner](...)
+[AWS Certified Cloud Practitioner](https://drive.google.com/file/d/1a47XDEA_0W9Y_QRQ774TJadwKOquNZiF/view?usp=sharing)
 
 - Certificado de Conclusão da
-[Sprint 5](...)
+[Sprint 5](https://compassuol.udemy.com/certificate/UC-7258a773-6969-49f9-8976-06dc0fe4dfbc/)
