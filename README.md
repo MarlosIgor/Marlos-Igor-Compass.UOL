@@ -20,6 +20,10 @@ Concluí o Curso de Python, abrangendo desde conceitos básicos até técnicas a
 - [Sprint 4️⃣](Sprint%204/):
 Concluí o curso de "Estatística Descritiva com Python", onde aprendi a analisar dados utilizando bibliotecas Python como NumPy e Pandas, calculando medidas estatísticas e visualizando informações relevantes. Além disso, finalizei os cursos de "Docker para Desenvolvedores com Docker Swarm e Kubernetes", adquirindo habilidades em criação, implantação e escalonamento de aplicativos por meio de contêineres. Agora estou capacitado a unir análise de dados estatísticos com implementações de aplicativos mais eficientes e escaláveis usando tecnologias de contêineres.
 
+- [Sprint 5️⃣](Sprint%205/):
+Concluí uma série de cursos da AWS que abordaram aspectos de negócios e técnicos da plataforma de computação em nuvem. Os cursos incluem AWS Partner: Sales Accreditation (Business), AWS Cloud Quest: Cloud Practitioner, AWS Partner: Accreditation (Technical), AWS Partner: Cloud Economics Accreditation e AWS Certified Cloud Practitioner.
+No geral, esses cursos me proporcionaram uma base sólida e ampla de conhecimento na plataforma AWS, capacitando-me a abordar tanto os aspectos de negócios quanto os técnicos da computação em nuvem. Isso me permite oferecer soluções e serviços da AWS de maneira mais eficaz e atender às diversas necessidades dos clientes.
+
 
 # Desafio 🧠
 
