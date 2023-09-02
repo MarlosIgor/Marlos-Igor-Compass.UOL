@@ -22,4 +22,4 @@
 [Python 3](https://www.udemy.com/certificate/UC-d9ef9c89-108d-4059-a990-ff01ab1a1772/)
 
 - Certificado de Conclusão da
-[Sprint 4](https://compassuol.udemy.com/certificate/UC-882f51ad-5441-4efa-ab31-d24ced75baab/)
+[Sprint 4](https://www.udemy.com/certificate/UC-882f51ad-5441-4efa-ab31-d24ced75baab/)

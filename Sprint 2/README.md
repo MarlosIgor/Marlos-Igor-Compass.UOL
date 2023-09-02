@@ -22,4 +22,4 @@
 [Big Data Fundamentos 3.0](https://drive.google.com/file/d/100-jjT9ZsfQLiq4SaEzgd6uuZMVJzI-7/view?usp=sharing)
 
 - Certificado de Conclusão da
-[Sprint 2](https://compassuol.udemy.com/certificate/UC-69fad130-956c-40a7-8886-dba408a93f67/?utm_source=sendgrid.com&utm_medium=email&utm_campaign=email)
+[Sprint 2](https://www.udemy.com/certificate/UC-69fad130-956c-40a7-8886-dba408a93f67/)

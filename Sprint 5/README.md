@@ -27,4 +27,4 @@
 [AWS Certified Cloud Practitioner](https://drive.google.com/file/d/1a47XDEA_0W9Y_QRQ774TJadwKOquNZiF/view?usp=sharing)
 
 - Certificado de Conclusão da
-[Sprint 5](https://compassuol.udemy.com/certificate/UC-7258a773-6969-49f9-8976-06dc0fe4dfbc/)
+[Sprint 5](https://www.udemy.com/certificate/UC-7258a773-6969-49f9-8976-06dc0fe4dfbc/)

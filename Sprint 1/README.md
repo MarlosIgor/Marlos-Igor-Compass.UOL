@@ -9,7 +9,7 @@
 [Git e GitHub](https://natural-oyster-41d.notion.site/Git-e-GitHub-do-b-sico-ao-avan-ado-c-gist-e-GitHub-Pages-61b3d3a3225640078169c612c3882c43)
 
 - Anotações do Curso de
-[Linux](https://natural-oyster-41d.notion.site/Linux-para-Desenvolvedores-c-terminal-Shell-Apache-e-4948fb4e9b59497bb1d5e2382d545c7e)
+[Linux](https://www.udemy.com/certificate/UC-d7a5a7d2-9846-4868-8f95-67c1590b6c97/)
 
 
 # Certificados 🏆
