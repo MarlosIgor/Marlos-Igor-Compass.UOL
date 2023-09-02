@@ -21,6 +21,6 @@
 [Linux](https://www.udemy.com/certificate/UC-6c1ee5f0-c3d6-4798-8507-233693afb4aa/)
 
 - Certificado de Conclusão da
-[Sprint 1](https://compassuol.udemy.com/certificate/UC-d7a5a7d2-9846-4868-8f95-67c1590b6c97/)
+[Sprint 1](https://www.udemy.com/certificate/UC-d7a5a7d2-9846-4868-8f95-67c1590b6c97/)
 
 
