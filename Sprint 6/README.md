@@ -4,6 +4,11 @@
 [AWS](exercicios/)
 
 
+# Cursos 📽
+- Link
+[➡ Sprint 6](https://natural-oyster-41d.notion.site/Sprint-6-ad6cb894273542939e99fe83c37ac122?pvs=4)
+
+
 # Certificados 🏆
 
 - Certificados
