@@ -28,7 +28,7 @@
 [Learn By Example: Hadoop, MapReduce for Big Data problems](https://www.udemy.com/certificate/UC-d18bdca4-eb94-4eb1-9b38-6faeef663669/)
 
 - Certificado do Curso de
-[Formação Spark com Pyspark : o Curso Completo]()
+[Formação Spark com Pyspark : o Curso Completo](https://www.udemy.com/certificate/UC-9c44ac59-b0b3-43da-a408-59c0882b1a66/)
 
 - Certificado de Conclusão da
 [Sprint 7](https://www.udemy.com/certificate/UC-2400221c-e392-41fc-a551-f4475a6fa0ee/)
