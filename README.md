@@ -28,7 +28,11 @@ No geral, esses cursos me proporcionaram uma base sólida e ampla de conheciment
 Concluí uma série de cursos da AWS relacionados à análise de dados e à computação em nuvem. Os cursos incluem AWS Skill Builder - Data Analytics Fundamentals, AWS Partner: Data Analytics on AWS, AWS Skill Builder - Introduction to Amazon Kinesis Streams, AWS Skill Builder - Introduction to Amazon Kinesis Analytics, AWS Skill Builder - Introduction to Amazon Elastic MapReduce (EMR), AWS Skill Builder - Introduction to Amazon Athena, AWS Skill Builder - Introduction to Amazon Quicksight, AWS Skill Builder - Introduction to AWS IoT Analytics, AWS Skill Builder - Getting Started with Amazon Redshift, AWS Skill Builder - Deep Dive into Concepts and Tools for Analyzing Streaming Data, AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift, AWS Skill Builder - Serverless Analytics e AWS Skill Builder - Why Analytics for Games.
 Esses cursos proporcionaram uma base sólida de conhecimento em análise de dados e nas soluções de computação em nuvem da AWS. Eles me capacitaram a abordar aspectos tanto de negócios quanto técnicos relacionados à análise de dados na plataforma AWS. Isso me permite oferecer soluções de análise de dados e serviços da AWS de maneira mais eficaz, atendendo às diversas necessidades dos clientes no campo da análise de dados e computação em nuvem.
 
-- [⭕ Sprint 7️⃣](Sprint%207/):
+- [✅ Sprint 7️⃣](Sprint%207/):
+Concluí dois cursos essenciais no campo da análise de dados em grande escala e processamento de big data: "Learn By Example: Hadoop, MapReduce for Big Data Problems" e "Formação Spark com PySpark: O Curso Completo". Estes cursos me proporcionaram uma base sólida para lidar com grandes volumes de dados.
+No curso de Hadoop e MapReduce, aprendi a utilizar essas ferramentas para processar e analisar dados em larga escala, o que me permite oferecer soluções eficazes para clientes que enfrentam desafios relacionados ao processamento de big data.
+O curso de Spark com PySpark aprofundou meu conhecimento sobre o Apache Spark e sua integração com Python, capacitando-me para análises em tempo real e processamento eficiente de grandes volumes de dados. Isso me permite atender às diversas necessidades dos clientes em busca de insights valiosos e análises avançadas em tempo real.
+Em resumo, esses cursos expandiram minhas habilidades e me tornaram mais capaz de oferecer soluções eficazes em análise de big data.
 
 - [⭕ Sprint 8️⃣](Sprint%208/):
 
