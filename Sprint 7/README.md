@@ -5,10 +5,13 @@
 
 	- [Tarefa 2: Apache Spark - Contador de Palavras](exercicios/seção-3-exercícios/tarefa-2-apache-spark-contador-de-palavras/Análise-de-Contagem-de-Palavras-com-Spark-em-Jupyter-Lab-ou-com-terminal.pdf)
 
+- Laboratório AWS:
+	-  [Lab AWS Glue](exercicios/seção-4-laboratório-aws/lab-aws- glue.pdf)
+ 
 - Desafio - Parte I
 	- Os arquivos CSV estão compactados devido ao seu tamanho.
 
-	- [Lab AWS Glue: Código](exercicios/seção-4-laboratório-aws/desafio-parte-1-etl.py)
+	- [Lab AWS Glue: Código](exercicios/seção-5-desafio-parte-I/desafio-parte-1-etl.py)
 
 	- [Lab AWS Glue: Dockerfile](exercicios/seção-4-laboratório-aws/Dockerfile)
 
