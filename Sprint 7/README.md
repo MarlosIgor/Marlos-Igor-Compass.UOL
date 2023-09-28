@@ -13,7 +13,7 @@
 
 	- [Lab AWS Glue: Código](exercicios/seção-5-desafio-parte-I/desafio-parte-1-etl.py)
 
-	- [Lab AWS Glue: Dockerfile](exercicios/seção-4-laboratório-aws/Dockerfile)
+	- [Lab AWS Glue: Dockerfile](exercicios/seção-5-desafio-parte-I/Dockerfile)
 
 
 # Evidências 📄
