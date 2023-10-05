@@ -34,7 +34,8 @@ No curso de Hadoop e MapReduce, aprendi a utilizar essas ferramentas para proces
 O curso de Spark com PySpark aprofundou meu conhecimento sobre o Apache Spark e sua integração com Python, capacitando-me para análises em tempo real e processamento eficiente de grandes volumes de dados. Isso me permite atender às diversas necessidades dos clientes em busca de insights valiosos e análises avançadas em tempo real.
 Em resumo, esses cursos expandiram minhas habilidades e me tornaram mais capaz de oferecer soluções eficazes em análise de big data.
 
-- [⭕ Sprint 8️⃣](Sprint%208/):
+- [✅ Sprint 8️⃣](Sprint%208/):
+A segunda parte do projeto foi concluída com sucesso, com a captura de dados do TMDB feita por meio de uma função AWS Lambda em Python. Os dados foram armazenados no Amazon S3 na camada RAW Zone, mantendo o formato original em JSON. Além disso, os dados foram agrupados em arquivos de 100 registros cada, para organização eficiente. Para garantir a regularidade da coleta, foi utilizado o Amazon EventBridge para disparar a função Lambda a cada 5 dias.
 
 - [⭕ Sprint 9️⃣](Sprint%209/):
 
