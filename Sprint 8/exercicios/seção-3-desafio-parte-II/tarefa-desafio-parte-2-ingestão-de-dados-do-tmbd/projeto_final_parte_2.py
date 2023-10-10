@@ -4,9 +4,9 @@ import requests
 from datetime import datetime
 
 REGIAO_AWS = 'us-east-1'
-ID_ACESSO_IAM_AWS = 'AKIAVMELNHFF7MWZ22ZS'
-CHAVE_SECRETA_IAM_AWS = '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'
-TMDB_API_KEY = 'cdfe43627e7ecf677ae84cd7fee138e2'
+ID_ACESSO_IAM_AWS = 'xxx'
+CHAVE_SECRETA_IAM_AWS = 'xxx'
+TMDB_API_KEY = 'xxx'
 
 TIPOS_MIDIA = {'tv': 'Series',
                'movie': 'Movies'}
