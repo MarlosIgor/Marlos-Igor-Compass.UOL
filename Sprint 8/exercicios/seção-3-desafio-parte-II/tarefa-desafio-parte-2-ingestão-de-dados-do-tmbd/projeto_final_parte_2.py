@@ -3,57 +3,60 @@ import boto3
 import requests
 from datetime import datetime
 
-AWS_REGION = 'us-east-1'
+REGIAO_AWS = 'us-east-1'
+ID_ACESSO_IAM_AWS = 'AKIAVMELNHFF7MWZ22ZS'
+CHAVE_SECRETA_IAM_AWS = '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'
+TMDB_API_KEY = 'cdfe43627e7ecf677ae84cd7fee138e2'
 
-AWS_IAM_ACCESS_KEY_ID = 'AKIAVMELNHFFZ2XGFWPU'
+TIPOS_MIDIA = {'tv': 'Series',
+               'movie': 'Movies'}
 
-AWS_IAM_SECRET_ACCESS_KEY = 'PXSH6+TQxi6XYU10IUEDnqjVfKg7QUlfH+5iSm/6'
-
-def get_movies_page(page, media_type, genre):
-    url = f"https://api.themoviedb.org/3/discover/{media_type}?api_key=cdfe43627e7ecf677ae84cd7fee138e2&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page={page}&with_genres={genre}"
-    response = requests.get(url)
-    data = response.json()
-    return data
+GENEROS = {'28,12': 'Ação-Aventura',
+           '28': 'Ação',
+           '12': 'Aventura',
+           '10759': 'Ação-Aventura'}
 
 
-def upload_to_s3(data, index, media_type):
-    s3 = boto3.client('s3', aws_access_key_id=AWS_IAM_ACCESS_KEY_ID,
-                      aws_secret_access_key=AWS_IAM_SECRET_ACCESS_KEY,
-                      region_name=AWS_REGION)
+def obter_dados_tmdb(pagina, tipo_midia, genero):
+    url = (f"https://api.themoviedb.org/3/discover/{tipo_midia}?api_key={TMDB_API_KEY}&"
+           f"language=pt-BR&sort_by=popularity.desc&include_adult=false&"
+           f"include_video=false&page={pagina}&"
+           f"with_genres={genero}")
 
-    bucket_name = 'data-lake-marlos-igor'
-    file_name = f'Raw/TMDB/JSON/{media_type}/{datetime.now().strftime("%Y/%m/%d")}/data_{index}.json'
-    s3.put_object(Body=json.dumps(data), Bucket=bucket_name, Key=file_name)
+    resposta = requests.get(url)
+    return resposta.json()
+
+
+def enviar_para_s3(dados, indice, tipo_midia, genero):
+    s3 = boto3.client('s3', aws_access_key_id=ID_ACESSO_IAM_AWS,
+                      aws_secret_access_key=CHAVE_SECRETA_IAM_AWS,
+                      region_name=REGIAO_AWS)
+
+    nome_bucket = 'data-lake-marlos-igor'
+    nome_arquivo = (f'Raw/TMDB/JSON/{TIPOS_MIDIA[tipo_midia]}/{GENEROS[genero]}/'
+                    f'{datetime.now().strftime("%Y/%m/%d")}/data_{indice}.json')
+    s3.put_object(Body=json.dumps(dados), Bucket=nome_bucket, Key=nome_arquivo)
+
+
+def processar_midia(tipo_midia, generos):
+    for genero in generos:
+        dados = obter_dados_tmdb(1, tipo_midia, genero)
+        todos_resultados = dados.get('results', [])
+        total_paginas = dados.get('total_pages', 1)
+
+        for pagina in range(2, total_paginas + 1):
+            dados = obter_dados_tmdb(pagina, tipo_midia, genero)
+            todos_resultados.extend(dados.get('results', []))
+
+        for i in range(0, len(todos_resultados), 100):
+            pedaco = todos_resultados[i:i + 100]
+            enviar_para_s3(pedaco, i // 100, tipo_midia, genero)
 
 
 def lambda_handler(event, context):
     try:
-        genre = 'Ação/Aventura'
-
-        movies_data = get_movies_page(1, 'movie', '28,12')
-        series_data = get_movies_page(1, 'tv', '10759')
-
-        total_movies_pages = movies_data['total_pages']
-        total_series_pages = series_data['total_pages']
-
-        all_movies_results = movies_data['results']
-        all_series_results = series_data['results']
-
-        for page in range(2, total_movies_pages + 1):
-            movies_data = get_movies_page(page, 'movie', '28,12')
-            all_movies_results.extend(movies_data['results'])
-
-        for page in range(2, total_series_pages + 1):
-            series_data = get_movies_page(page, 'tv', '10759')
-            all_series_results.extend(series_data['results'])
-
-        for i in range(0, len(all_movies_results), 100):
-            chunk = all_movies_results[i:i + 100]
-            upload_to_s3(chunk, i // 100, 'movie')
-
-        for i in range(0, len(all_series_results), 100):
-            chunk = all_series_results[i:i + 100]
-            upload_to_s3(chunk, i // 100, 'tv')
+        processar_midia('movie', ['28,12', '28', '12'])
+        processar_midia('tv', ['10759'])
 
         return {
             'statusCode': 200,
