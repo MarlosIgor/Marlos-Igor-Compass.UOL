@@ -2,16 +2,16 @@
 
 - [Tarefa: Modelagem Relacional - Normalização](exercicios/seção-2-modelagem-de-dados/tarefa-1-modelagem-relacional-normalização/)
 
-	- [Imagens](exercicios/seção-2-modelagem-de-dados/tarefa-1-modelagem-relacional-normalização/Relacional.png)
+	- [Imagens](exercicios/seção-2-modelagem-de-dados/tarefa-1-modelagem-relacional-normalização/relacional.png)
 	
-	- [SQL Modelagem](exercicios/seção-2-modelagem-de-dados/tarefa-1-modelagem-relacional-normalização/concessionaria.sql)
+	- [SQL Modelagem](exercicios/seção-2-modelagem-de-dados/tarefa-1-modelagem-relacional-normalização/my_concessionaria.sql)
 		
 
 - [Tarefa: Modelagem Dimensional - Criação de Modelo](exercicios/seção-2-modelagem-de-dados/tarefa-2-modelagem-dimensional-criação-de-odelo/)
 
-	- [Imagens](exercicios/seção-2-modelagem-de-dados/tarefa-2-modelagem-dimensional-criação-de-odelo/Modelagem_Dimensional.drawio.png)
+	- [Imagens](exercicios/seção-2-modelagem-de-dados/tarefa-2-modelagem-dimensional-criação-de-odelo/modelagem_dimensional.drawio.png)
 	
-	- [SQL Dimensional Com VIEW](exercicios/seção-2-modelagem-de-dados/tarefa-2-modelagem-dimensional-criação-de-odelo/concessionaria.sql)
+	- [SQL Dimensional Com VIEW](exercicios/seção-2-modelagem-de-dados/tarefa-2-modelagem-dimensional-criação-de-odelo/my_concessionaria.sql)
  
  
 # Desafio - Parte III 📝

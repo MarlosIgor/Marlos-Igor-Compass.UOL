@@ -2,17 +2,25 @@
 
 - Exercícios:
 	- [Tarefa: Exercício TMDB](exercicios/seção-2-exercícios/tarefa-exercício-tmdb/top_rated_movies.py)
+	
 		- [Imagens](exercicios/seção-2-exercícios/tarefa-exercício-tmdb/PDF-01.pdf)
 
 - Desafio - Parte II:
-	-  [Tarefa: Desafio Parte 2 - Ingestão de dados do TMBD](exercicios/seção-3-desafio-parte-II/tarefa-desafio-parte-2-ingestão-de-dados-do-tmbd/projeto_final_parte_2.py)
+	-  [Tarefa: Desafio Parte 2 - Ingestão de dados do TMBD](exercicios/seção-3-desafio-parte-II/tarefa-desafio-parte-2-ingestão-de-dados-do-tmbd/) 
+	
+		- [Script Lambda Movie](exercicios/seção-3-desafio-parte-II/tarefa-desafio-parte-2-ingestão-de-dados-do-tmbd/projeto_final_parte_2_movie.py)
+		
+		- [Script Lambda Serie](exercicios/seção-3-desafio-parte-II/tarefa-desafio-parte-2-ingestão-de-dados-do-tmbd/projeto_final_parte_2_serie.py)
+	
 		- [Imagens](exercicios/seção-3-desafio-parte-II/tarefa-desafio-parte-2-ingestão-de-dados-do-tmbd/README.md)
+ 
  
 - Exercícios Spark Batch
 	- Tarefa 3: Exercícios - Geração de massa de dados
 		- [1 - Gera Números Aleatórios](exercicios/seção-4-exercícios-spark-batch/tarefa-exercícios-geração-de-massa-de-dados/1-lista_numeros_aleatorios_invertida/lista_numeros_aleatorios_invertida.py)
 
 		- [2 - Ordena e salva nomes de animais em CSV](exercicios/seção-4-exercícios-spark-batch/tarefa-exercícios-geração-de-massa-de-dados/2-ordenar_e_salvar_animais_em_csv/ordenar_e_salvar_animais_em_csv.py)
+	
 			- [animais.csv](exercicios/seção-4-exercícios-spark-batch/tarefa-exercícios-geração-de-massa-de-dados/2-ordenar_e_salvar_animais_em_csv/animais.csv)
 
 		- [3 - Gera Nomes Aleatórios e Salva em TXT](exercicios/seção-4-exercícios-spark-batch/tarefa-exercícios-geração-de-massa-de-dados/3-gerar_nomes_aleatorios_e_salvar_em_txt/gerar_nomes_aleatorios_e_salvar_em_txt.py)
