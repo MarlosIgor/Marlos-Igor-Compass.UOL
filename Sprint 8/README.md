@@ -2,11 +2,11 @@
 
 - Exercícios:
 	- [Tarefa: Exercício TMDB](exercicios/seção-2-exercícios/tarefa-exercício-tmdb/top_rated_movies.py)
-		- [Prints](exercicios/seção-2-exercícios/tarefa-exercício-tmdb/PDF-01.pdf)
+		- [Imagens](exercicios/seção-2-exercícios/tarefa-exercício-tmdb/PDF-01.pdf)
 
 - Desafio - Parte II:
 	-  [Tarefa: Desafio Parte 2 - Ingestão de dados do TMBD](exercicios/seção-3-desafio-parte-II/tarefa-desafio-parte-2-ingestão-de-dados-do-tmbd/projeto_final_parte_2.py)
-		- [Prints](exercicios/seção-3-desafio-parte-II/tarefa-desafio-parte-2-ingestão-de-dados-do-tmbd/PDF-02.pdf)
+		- [Imagens](exercicios/seção-3-desafio-parte-II/tarefa-desafio-parte-2-ingestão-de-dados-do-tmbd/README.md)
  
 - Exercícios Spark Batch
 	- Tarefa 3: Exercícios - Geração de massa de dados
@@ -25,7 +25,7 @@
 
 	- Tarefa 4: Exercícios - Apache Spark
 		- [Geração de massa de dados](exercicios/seção-4-exercícios-spark-batch/tarefa-exercícios-apache-spark/exercicio_intro_spark.py)
-			- [Prints](exercicios/seção-4-exercícios-spark-batch/tarefa-exercícios-apache-spark/PDF-03.pdf)
+			- [Imagens](exercicios/seção-4-exercícios-spark-batch/tarefa-exercícios-apache-spark/PDF-03.pdf)
 
 # Certificados 🏆
 

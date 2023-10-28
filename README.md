@@ -37,7 +37,8 @@ Em resumo, esses cursos expandiram minhas habilidades e me tornaram mais capaz d
 - [✅ Sprint 8️⃣](Sprint%208/):
 A segunda parte do projeto foi concluída com sucesso, com a captura de dados do TMDB feita por meio de uma função AWS Lambda em Python. Os dados foram armazenados no Amazon S3 na camada RAW Zone, mantendo o formato original em JSON. Além disso, os dados foram agrupados em arquivos de 100 registros cada, para organização eficiente. Para garantir a regularidade da coleta, foi utilizado o Amazon EventBridge para disparar a função Lambda a cada 5 dias.
 
-- [⭕ Sprint 9️⃣](Sprint%209/):
+- [✅ Sprint 9️⃣](Sprint%209/):
+A terceira parte do projeto foi concluída com sucesso. Os dados foram convertidos de JSON para Parquet, refinados para gerar insights na camada REF e salvos. O crawler foi utilizado para realizar consultas no Athena.  
 
 - [⭕ Sprint 🔟](Sprint%210/):
 
