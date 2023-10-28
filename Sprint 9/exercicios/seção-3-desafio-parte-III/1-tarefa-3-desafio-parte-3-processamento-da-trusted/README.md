@@ -35,7 +35,6 @@
 
 - Arquivos Salvos como Parquet - Serie TRT ⤵
 
-![](Prints/05_S3_Serie_Parquet_TRT.png)  
-
+![](Prints/05_S3_Serie_Parquet_TRT.png)
 
 

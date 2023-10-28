@@ -99,4 +99,5 @@ popularity: Popularidade do ator associado ao fato.
 
 
 	- ![](Prints_Schema/Schema_Serie.drawio.png)
+	
 
