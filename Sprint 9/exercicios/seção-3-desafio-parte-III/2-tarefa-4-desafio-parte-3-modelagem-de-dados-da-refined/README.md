@@ -1,4 +1,4 @@
-# Schema Movie ⤵  
+# Schema Serie ⤵  
 
 ## Explicação do esquema de dados para Series
 
@@ -45,11 +45,11 @@ id_credit: ID do crédito associado ao fato.
 id_first_air_date: ID da data de estreia associada ao fato.
 popularity: Popularidade do ator associado ao fato.
 
-	- ![](Prints_Schema/Schema_Movie.drawio.png)
+	- ![](Prints_Schema/Schema_Serie.drawio.png)
 
 
 
-# Schema Serie ⤵
+# Schema Movie ⤵
   
 ## Explicação do esquema de dados para Movies  
 
@@ -97,7 +97,6 @@ id_data_release: ID da data de lançamento associada ao fato.
 popularity: Popularidade do ator associado ao fato.
 
 
-
-	- ![](Prints_Schema/Schema_Serie.drawio.png)
+	- ![](Prints_Schema/Schema_Movie.drawio.png)
 	
 
