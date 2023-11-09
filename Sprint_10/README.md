@@ -18,4 +18,4 @@
 
 - ⤵
 
-![](https://img-c.udemycdn.com/redactor/raw/assignment/2023-02-22_18-38-09-0a9fcf25dcd6a1f2c2337aacada1c980.png)
+![](https://www.udemy.com/certificate/UC-d751bbce-efce-4b66-af0d-b5bd8e35aa04/)
