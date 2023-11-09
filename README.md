@@ -28,6 +28,8 @@ No geral, esses cursos me proporcionaram uma base sólida e ampla de conheciment
 Concluí uma série de cursos da AWS relacionados à análise de dados e à computação em nuvem. Os cursos incluem AWS Skill Builder - Data Analytics Fundamentals, AWS Partner: Data Analytics on AWS, AWS Skill Builder - Introduction to Amazon Kinesis Streams, AWS Skill Builder - Introduction to Amazon Kinesis Analytics, AWS Skill Builder - Introduction to Amazon Elastic MapReduce (EMR), AWS Skill Builder - Introduction to Amazon Athena, AWS Skill Builder - Introduction to Amazon Quicksight, AWS Skill Builder - Introduction to AWS IoT Analytics, AWS Skill Builder - Getting Started with Amazon Redshift, AWS Skill Builder - Deep Dive into Concepts and Tools for Analyzing Streaming Data, AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift, AWS Skill Builder - Serverless Analytics e AWS Skill Builder - Why Analytics for Games.
 Esses cursos proporcionaram uma base sólida de conhecimento em análise de dados e nas soluções de computação em nuvem da AWS. Eles me capacitaram a abordar aspectos tanto de negócios quanto técnicos relacionados à análise de dados na plataforma AWS. Isso me permite oferecer soluções de análise de dados e serviços da AWS de maneira mais eficaz, atendendo às diversas necessidades dos clientes no campo da análise de dados e computação em nuvem.
 
+# Desafio Final 🧠  
+
 - [✅ Sprint 7️⃣](Sprint_7/):
 Concluí dois cursos essenciais no campo da análise de dados em grande escala e processamento de big data: "Learn By Example: Hadoop, MapReduce for Big Data Problems" e "Formação Spark com PySpark: O Curso Completo". Estes cursos me proporcionaram uma base sólida para lidar com grandes volumes de dados.
 No curso de Hadoop e MapReduce, aprendi a utilizar essas ferramentas para processar e analisar dados em larga escala, o que me permite oferecer soluções eficazes para clientes que enfrentam desafios relacionados ao processamento de big data.
@@ -40,10 +42,5 @@ A segunda parte do projeto foi concluída com sucesso, com a captura de dados do
 - [✅ Sprint 9️⃣](Sprint_9/):
 A terceira parte do projeto foi concluída com sucesso. Os dados foram convertidos de JSON para Parquet, refinados para gerar insights na camada REF e salvos. O crawler foi utilizado para realizar consultas no Athena.  
 
-- [⭕ Sprint 🔟](Sprint_10/):
-
-
-
-# Desafio 🧠
-
-- [Desafio Final](Desafio/)
+- [✅ Sprint 🔟](Sprint_10/):
+A quarta fase do projeto foi concluída com sucesso. Utilizando as tabelas da camada de insights refinados no Athena, criei views específicas para filmes e séries do gênero ação e aventura. Além disso, elaborei dashboards no AWS QuickSight para apresentar de forma visual e intuitiva informações sobre o TOP10 de filmes e séries mais populares.
