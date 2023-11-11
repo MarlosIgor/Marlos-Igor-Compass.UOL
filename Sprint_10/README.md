@@ -12,7 +12,7 @@
 [AWS QuickSight [2023 Edition]](https://www.udemy.com/certificate/UC-d751bbce-efce-4b66-af0d-b5bd8e35aa04/)
 
 - Certificado de Conclusão da
-[Sprint 10]()
+[Sprint 10](https://www.udemy.com/certificate/UC-208ec97b-83b7-4dbb-a9b0-0524b68e0a06/)
 
 #
 
